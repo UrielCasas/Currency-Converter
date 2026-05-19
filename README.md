@@ -12,4 +12,4 @@ It can be used to calculate a value of one currency in another using real-time r
 ![ExchangeRate API](https://img.shields.io/badge/ExchangeRate_API-4CAF50?style=flat&logo=cashapp&logoColor=white)
 
 ## 🔗 Live site
-[Ver conversor →](https://urielcasas.github.io/Currency-Converter/)
+[Link to converter →](https://urielcasas.github.io/Currency-Converter/)
