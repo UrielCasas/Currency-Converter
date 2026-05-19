@@ -1,6 +1,6 @@
 ## 🔎 Currency-Converter
 It's a small project where i learned to consume an external API.
-It can be used to calculate a value of one currency in another using real-time rates, updated daily by ExcahngeRate-API.
+It can be used to calculate a value of one currency in another using real-time rates, updated daily by ExchangeRate-API.
 
 ## ⚠️ Note on API Key
 The ExchangeRate-API key used in this project is publicly visible in the source code.
