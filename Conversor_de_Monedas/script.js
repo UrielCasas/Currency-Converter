@@ -45,7 +45,7 @@ const colocarCodigos = (datos) => {
 
 // Calcula el monto
 const calcularMonto = (monto, desde, hasta) => {
-    const montoNumero = parseFloat(monto)
+    const montoNumero = parseFloat(monto);
     const tasaDesde   = conversionRates[desde];
     const tasaHasta   = conversionRates[hasta];
     const resultado   = (monto * (tasaHasta / tasaDesde)).toFixed(2);
@@ -59,7 +59,7 @@ const calcularMonto = (monto, desde, hasta) => {
     alertSuccess.querySelector('h1').textContent = `${resultado} ${hasta}`;
 
     // Muestra el resultado
-    alertSuccess.classList.remove('d-none')
+    alertSuccess.classList.remove('d-none');
 }
 
 
@@ -78,7 +78,7 @@ formulario.addEventListener("submit", (e) => {
         console.log('Campo de monto vacío o inválido.');
         alertDanger.classList.remove('d-none');
         // En caso de error al ingresar otro monto, se oculta el resultado
-        alertSuccess.classList.add('d-none')
+        alertSuccess.classList.add('d-none');
         return;
     }
 
