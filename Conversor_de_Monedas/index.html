@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas</title>
+    
+    <!-- Link a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Link a CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link a FontAwesome -->
+    <script src="https://kit.fontawesome.com/93b33bd194.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-md">
+        <div class="card border-warning rounded-4">
+            <div class="card-body rounded-3">
+
+                <!-- Título de la card -->
+                <h1 class="card-title text-center mt-2"><span><i class="fa-solid fa-money-bill-transfer fa-rotate-by" style="color: #222831; --fa-rotate-angle: -20deg;"></i></span> Conversor de Monedas</h1>
+                
+                <!-- Alerta en caso de monto vacio -->
+                <div class="alert alert-danger mt-4 d-none">Debe ingresar un monto!</div>
+
+                <!-- Entrada de monto -->
+                <form class="my-4" id="formulario">
+                    <input 
+                        class="form-control my-3"
+                        name="monto"
+                        type="number"
+                        placeholder="Ingrese el monto..."
+                        step="0.001"
+                        min="0"
+                    />
+
+                <!-- Selección del cambio -->
+                    <div class="row my-3">
+                        <div class="col-6">
+                            <label class="form-label fw-semibold" for="desde">Desde:</label>
+                            <select class="form-select" name="from" id="desde">
+                                <!-- Aca entrara el option DESDE desde js-->
+                            </select>
+                        </div>
+
+                        <div class="col-6">
+                            <label class="form-label fw-semibold" for="hasta">Hasta:</label>
+                            <select class="form-select" name="until" id="hasta">
+                                <!-- Aca entrara el option HASTA desde js-->
+                            </select>
+                        </div>
+                    </div>
+
+                <!-- Botón para convertir el monto -->
+                    <button class="btn btn-dark btn-lg center w-100 mt-3" type="submit">Convertir</button>
+                </form>
+
+                <!-- Mostrar monto convertido -->
+                <div class="alert alert-light rounded-4 text-dark text-center mt-4 d-none">
+                    <p><span id="montoDesde"></span> <span id="monedaDesde"></span> = <span id="montoHasta"></span> <span id="monedaHasta"></span></p>
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <template id="templateMoneda">
+        <option value=""></option>
+    </template>
+    
+    <script src="script.js"></script>
+</body>
+</html>

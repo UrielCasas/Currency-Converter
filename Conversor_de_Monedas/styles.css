@@ -1,0 +1,18 @@
+body {
+    min-height:  75vh;
+    display:     flex;
+    align-items: center;
+    background-color: #222831;
+}
+
+.card {
+    max-width: 600px;
+    margin:    0 auto;
+    padding:   10px;
+    overflow:  hidden;
+    background-color: #393E46;
+}
+
+.card-body {
+    background-color: #FFD369;
+}
