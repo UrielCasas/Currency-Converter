@@ -8,4 +8,4 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
 ## 📦 Services
-![ExchangeRate-API](https://shields.io)
+![ExchangeRate API](https://img.shields.io/badge/ExchangeRate_API-4CAF50?style=flat&logo=cashapp&logoColor=white)
