@@ -48,7 +48,7 @@ const calcularMonto = (monto, desde, hasta) => {
     const montoNumero = parseFloat(monto);
     const tasaDesde   = conversionRates[desde];
     const tasaHasta   = conversionRates[hasta];
-    const resultado   = (monto * (tasaHasta / tasaDesde)).toFixed(2);
+    const resultado   = (monto * (tasaHasta / tasaDesde)).toFixed(4);
     
     // Agrega los datos calculados
     alertSuccess.querySelector('#montoDesde').textContent  = monto;
